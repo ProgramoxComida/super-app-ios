@@ -6,12 +6,28 @@
 //
 
 import UIKit
+import WhatsNewKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let whatsNew = WhatsNew(title: "What's new",
+                             items: [
+                                WhatsNew.Item(title: "Test", subtitle: "Testing What's new stuff", image: UIImage(systemName: "star"))
+                             ])
+        
+        guard let vc = WhatsNewViewController(whatsNew: whatsNew, versionStore: KeyValueWhatsNewVersionStore()) else {
+            return
+        }
+        
+        present(vc, animated: true)
     }
 
 
