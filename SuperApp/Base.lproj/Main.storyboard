@@ -98,33 +98,43 @@
             </objects>
             <point key="canvasLocation" x="1044.9275362318842" y="105.80357142857143"/>
         </scene>
-        <!--Dashboard-->
+        <!--Dashboard View Controller-->
         <scene sceneID="wCd-mw-m0l">
             <objects>
                 <tabBarController id="gzi-VP-WCP" customClass="DashboardViewController" customModule="SuperApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Dashboard" id="IO5-ID-3fS"/>
+                    <navigationItem key="navigationItem" id="IO5-ID-3fS"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mcn-Nm-6dD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
+                    <connections>
+                        <segue destination="m1Z-KM-LOJ" kind="relationship" relationship="viewControllers" id="hCz-5S-y4a"/>
+                        <segue destination="mWZ-K7-IwH" kind="relationship" relationship="viewControllers" id="ofX-do-XAF"/>
+                        <segue destination="ijG-Gi-nJg" kind="relationship" relationship="viewControllers" id="7Ao-H0-B6c"/>
+                        <segue destination="xvH-WW-9ku" kind="relationship" relationship="viewControllers" id="iiO-h7-Q2i"/>
+                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IUA-S5-frd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1877" y="862"/>
+            <point key="canvasLocation" x="1045" y="842"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="RZR-gR-rot">
+        <!--Test 1-->
+        <scene sceneID="cNE-NY-9PI">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KRM-5N-7pL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <navigationController id="yb6-i4-dzo" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ie7-gP-Hop">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                </navigationController>
+                <viewController id="m1Z-KM-LOJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bjI-BG-tHi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="EGZ-2n-4CQ"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Banca" image="banknote.fill" catalog="system" id="uRh-hd-Epj"/>
+                    <navigationItem key="navigationItem" title="Test 1" id="XUl-Wd-9xh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0F7-WW-LJg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2939" y="846"/>
+            <point key="canvasLocation" x="-212" y="1646"/>
         </scene>
         <!--Register-->
         <scene sceneID="HX5-fz-kHV">
@@ -140,11 +150,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Me-oJ-BDU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1877" y="106"/>
+            <point key="canvasLocation" x="1926" y="106"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="x2O-a2-Ib7">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FcY-9E-yN2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jlP-Dv-Pvp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VY2-r0-o6i">
@@ -156,17 +167,93 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="eeL-Dd-1hm"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FcY-9E-yN2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="105.97826086956522"/>
         </scene>
+        <!--Test 2-->
+        <scene sceneID="bgp-ap-hQp">
+            <objects>
+                <viewController id="mWZ-K7-IwH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CvB-Ep-oqQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Uaf-Kc-NLG"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Compras" image="cart.fill" catalog="system" id="sMI-3T-oIg"/>
+                    <navigationItem key="navigationItem" title="Test 2" id="E49-EZ-9Su"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xQ2-Ak-v4f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="622" y="1646"/>
+        </scene>
+        <!--Test 3-->
+        <scene sceneID="F4D-xt-dlL">
+            <objects>
+                <viewController id="ijG-Gi-nJg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Yp-9J-7YX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rcr-Zh-ipj"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Comercio" image="cube.box.fill" catalog="system" id="Qe3-LY-l0p"/>
+                    <navigationItem key="navigationItem" title="Test 3" id="HWD-U0-HAg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uws-Pr-Nne" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1403" y="1646"/>
+        </scene>
+        <!--Test 4-->
+        <scene sceneID="Voj-bv-rGw">
+            <objects>
+                <viewController id="xvH-WW-9ku" customClass="ProfileViewController" customModule="SuperApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gsN-Xd-N6K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7x-8d-fRs">
+                                <rect key="frame" x="184" y="331" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="didTapButton" destination="xvH-WW-9ku" eventType="touchUpInside" id="6BP-gv-L2s"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RdO-4X-YQl"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Perfil" image="person.fill" catalog="system" id="bYS-qZ-whi"/>
+                    <navigationItem key="navigationItem" title="Test 4" id="nk2-Yo-FLZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KqF-t2-5Ic" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2245" y="1646"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="banknote.fill" catalog="system" width="128" height="78"/>
+        <image name="cart.fill" catalog="system" width="128" height="102"/>
+        <image name="cube.box.fill" catalog="system" width="128" height="124"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
