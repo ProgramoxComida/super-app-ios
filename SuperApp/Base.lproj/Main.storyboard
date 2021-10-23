@@ -293,9 +293,12 @@
                                                             <constraint firstAttribute="height" constant="48" id="Zww-r0-Ifv"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                        <state key="normal" title="Abrir cuenta">
+                                                        <state key="normal" title="Continuar">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <segue destination="8aV-4E-Fjy" kind="push" id="WfI-IS-kNM"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.027450980390000001" green="0.12941176469999999" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -369,40 +372,48 @@
             </objects>
             <point key="canvasLocation" x="1908.6956521739132" y="-595.3125"/>
         </scene>
-        <!--Continuar como invitado-->
+        <!--¡Bienvenido!-->
         <scene sceneID="pxo-8T-wFs">
             <objects>
-                <viewController id="8aV-4E-Fjy" sceneMemberID="viewController">
+                <viewController id="8aV-4E-Fjy" customClass="GuestDashboardViewController" customModule="SuperApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jvy-9r-jmo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iax-dt-Jt9">
-                                <rect key="frame" x="32" y="798" width="350" height="48"/>
-                                <color key="backgroundColor" red="0.027450980390000001" green="0.12941176469999999" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="Iz4-1s-tmR"/>
-                                    <constraint firstAttribute="width" constant="350" id="JUh-CT-gsb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Empezar ahora">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Omf-aF-azv">
+                                <rect key="frame" x="45" y="347" width="334" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9IY-yS-68S">
+                                <rect key="frame" x="94" y="157" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.4823529412" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atA-KI-tvW">
+                                <rect key="frame" x="238" y="157" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.45098039220000002" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yLh-uE-HTs"/>
                         <color key="backgroundColor" red="0.015686274510000001" green="0.1960784314" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Iax-dt-Jt9" firstAttribute="leading" secondItem="yLh-uE-HTs" secondAttribute="leading" constant="32" id="Gf9-pG-rCr"/>
-                            <constraint firstItem="yLh-uE-HTs" firstAttribute="bottom" secondItem="Iax-dt-Jt9" secondAttribute="bottom" constant="16" id="Vls-yb-YLb"/>
-                            <constraint firstItem="yLh-uE-HTs" firstAttribute="trailing" secondItem="Iax-dt-Jt9" secondAttribute="trailing" constant="32" id="d6d-yj-gpI"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Continuar como invitado" id="UcD-i7-LId"/>
+                    <navigationItem key="navigationItem" title="¡Bienvenido!" id="UcD-i7-LId"/>
+                    <connections>
+                        <outlet property="btnCircularRecharges" destination="atA-KI-tvW" id="nx9-qi-5rV"/>
+                        <outlet property="btnCircularServices" destination="9IY-yS-68S" id="sa1-2r-Zjd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNE-Eh-EdJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3294" y="-538"/>
+            <point key="canvasLocation" x="2805.7971014492755" y="-595.3125"/>
         </scene>
         <!--Login-->
         <scene sceneID="tne-QT-ifu">
@@ -603,6 +614,9 @@
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="cube.box.fill" catalog="system" width="128" height="124"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

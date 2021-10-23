@@ -19,6 +19,7 @@
 		3A7B9D672715196100774720 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7B9D662715196100774720 /* ProfileViewController.swift */; };
 		3AB7363F2723A0F900D890B7 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB7363E2723A0F900D890B7 /* WelcomeViewController.swift */; };
 		3AB736412723A97500D890B7 /* NewClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB736402723A97500D890B7 /* NewClientViewController.swift */; };
+		3AD85EA02723E5A9003323DB /* GuestDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD85E9F2723E5A9003323DB /* GuestDashboardViewController.swift */; };
 		C546638EDC4D0DCC1FC898E9 /* Pods_SuperAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC849E898800557D8AFC9F2 /* Pods_SuperAppTests.framework */; };
 		F297E4642D6CF85163A983B0 /* Pods_SuperApp_SuperAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F17EA9378B5CB808684A4F /* Pods_SuperApp_SuperAppUITests.framework */; };
 		F41CA6D48D6F268335AC03E3 /* Pods_SuperApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5317D15041988BFE624D2BE1 /* Pods_SuperApp.framework */; };
@@ -62,6 +63,7 @@
 		3A7B9D662715196100774720 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3AB7363E2723A0F900D890B7 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		3AB736402723A97500D890B7 /* NewClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClientViewController.swift; sourceTree = "<group>"; };
+		3AD85E9F2723E5A9003323DB /* GuestDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestDashboardViewController.swift; sourceTree = "<group>"; };
 		4CC849E898800557D8AFC9F2 /* Pods_SuperAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5317D15041988BFE624D2BE1 /* Pods_SuperApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		744490137887303ACE3AA947 /* Pods-SuperAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperAppTests.release.xcconfig"; path = "Target Support Files/Pods-SuperAppTests/Pods-SuperAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				3A7B9D6327149AE400774720 /* DashboardViewController.swift */,
 				3AB7363E2723A0F900D890B7 /* WelcomeViewController.swift */,
 				3AB736402723A97500D890B7 /* NewClientViewController.swift */,
+				3AD85E9F2723E5A9003323DB /* GuestDashboardViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				3A7B9D672715196100774720 /* ProfileViewController.swift in Sources */,
 				3A78D85C2708F62100F969A7 /* ViewController.swift in Sources */,
 				3A78D8582708F62100F969A7 /* AppDelegate.swift in Sources */,
+				3AD85EA02723E5A9003323DB /* GuestDashboardViewController.swift in Sources */,
 				3A7B9D6427149AE400774720 /* DashboardViewController.swift in Sources */,
 				3A78D85A2708F62100F969A7 /* SceneDelegate.swift in Sources */,
 				3AB7363F2723A0F900D890B7 /* WelcomeViewController.swift in Sources */,
