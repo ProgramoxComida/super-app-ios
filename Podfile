@@ -8,6 +8,7 @@ target 'SuperApp' do
   # Pods for SuperApp
   
   pod 'WhatsNewKit'
+  pod 'CardParts'
 
   target 'SuperAppTests' do
     inherit! :search_paths
