@@ -9,6 +9,7 @@ target 'SuperApp' do
   
   pod 'WhatsNewKit'
   pod 'CardParts'
+  pod 'DLRadioButton', '~> 1.4'
 
   target 'SuperAppTests' do
     inherit! :search_paths

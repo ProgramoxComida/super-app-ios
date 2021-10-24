@@ -10,6 +10,10 @@ import UIKit
 class GuestDashboardViewController: UIViewController {
     @IBOutlet weak var btnCircularRecharges: UIButton!
     @IBOutlet weak var btnCircularServices: UIButton!
+    @IBOutlet weak var viewAddCard: UIView!
+    @IBOutlet weak var viewCreateAccount: UIView!
+    
+    @IBOutlet weak var viewAddCardContainer: UIView!
     
     var diagonalSideView: UIView = {
             let view = UIView()
@@ -32,8 +36,13 @@ class GuestDashboardViewController: UIViewController {
     private func setupViews() {
         view.addSubview(diagonalSideView)
         
+        dropShadow(view: viewAddCardContainer)
+        
         btnCircularServices.layer.cornerRadius = btnCircularServices.frame.size.width / 2
         btnCircularRecharges.layer.cornerRadius = btnCircularRecharges.frame.size.width / 2
+        
+        view.bringSubviewToFront(viewAddCard)
+        view.bringSubviewToFront(viewCreateAccount)
 
         let heightConstraint = diagonalSideView.heightAnchor.constraint(equalTo: view.heightAnchor)
         let leftConstraint = diagonalSideView.leftAnchor.constraint(equalTo: view.leftAnchor)
@@ -66,5 +75,17 @@ class GuestDashboardViewController: UIViewController {
         // Create the mask
         layer.path = bezierPath.cgPath
         view.layer.mask = layer
+    }
+    
+    func dropShadow(view: UIView, scale: Bool = true) {
+        view.layer.masksToBounds = false
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOpacity = 0.5
+        view.layer.shadowOffset = CGSize(width: -1, height: 1)
+        view.layer.shadowRadius = 1
+
+        // view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
+        view.layer.shouldRasterize = true
+        view.layer.rasterizationScale = scale ? UIScreen.main.scale : 1
     }
 }
