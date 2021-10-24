@@ -43,6 +43,7 @@ class GuestDashboardViewController: UIViewController {
         
         view.bringSubviewToFront(viewAddCard)
         view.bringSubviewToFront(viewCreateAccount)
+        view.bringSubviewToFront(btnCircularRecharges)
 
         let heightConstraint = diagonalSideView.heightAnchor.constraint(equalTo: view.heightAnchor)
         let leftConstraint = diagonalSideView.leftAnchor.constraint(equalTo: view.leftAnchor)

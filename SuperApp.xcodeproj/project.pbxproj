@@ -23,6 +23,7 @@
 		3AD85EA2272474C5003323DB /* NewMiPymeAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD85EA1272474C5003323DB /* NewMiPymeAccountViewController.swift */; };
 		3AD85EA52724C72B003323DB /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD85EA42724C72B003323DB /* RadioButton.swift */; };
 		3AD85EA72724D865003323DB /* GuestAddNewCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD85EA62724D865003323DB /* GuestAddNewCardViewController.swift */; };
+		3AD85EA92724F9A4003323DB /* RechargesSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD85EA82724F9A3003323DB /* RechargesSelectionViewController.swift */; };
 		C546638EDC4D0DCC1FC898E9 /* Pods_SuperAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC849E898800557D8AFC9F2 /* Pods_SuperAppTests.framework */; };
 		F297E4642D6CF85163A983B0 /* Pods_SuperApp_SuperAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F17EA9378B5CB808684A4F /* Pods_SuperApp_SuperAppUITests.framework */; };
 		F41CA6D48D6F268335AC03E3 /* Pods_SuperApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5317D15041988BFE624D2BE1 /* Pods_SuperApp.framework */; };
@@ -70,6 +71,7 @@
 		3AD85EA1272474C5003323DB /* NewMiPymeAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMiPymeAccountViewController.swift; sourceTree = "<group>"; };
 		3AD85EA42724C72B003323DB /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		3AD85EA62724D865003323DB /* GuestAddNewCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestAddNewCardViewController.swift; sourceTree = "<group>"; };
+		3AD85EA82724F9A3003323DB /* RechargesSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechargesSelectionViewController.swift; sourceTree = "<group>"; };
 		4CC849E898800557D8AFC9F2 /* Pods_SuperAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5317D15041988BFE624D2BE1 /* Pods_SuperApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		744490137887303ACE3AA947 /* Pods-SuperAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperAppTests.release.xcconfig"; path = "Target Support Files/Pods-SuperAppTests/Pods-SuperAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				3AD85E9F2723E5A9003323DB /* GuestDashboardViewController.swift */,
 				3AD85EA1272474C5003323DB /* NewMiPymeAccountViewController.swift */,
 				3AD85EA62724D865003323DB /* GuestAddNewCardViewController.swift */,
+				3AD85EA82724F9A3003323DB /* RechargesSelectionViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				3A7B9D6427149AE400774720 /* DashboardViewController.swift in Sources */,
 				3AD85EA52724C72B003323DB /* RadioButton.swift in Sources */,
 				3A78D85A2708F62100F969A7 /* SceneDelegate.swift in Sources */,
+				3AD85EA92724F9A4003323DB /* RechargesSelectionViewController.swift in Sources */,
 				3AB7363F2723A0F900D890B7 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
